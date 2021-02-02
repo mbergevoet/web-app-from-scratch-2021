@@ -3,7 +3,12 @@
 -   Project poster
 -   Project description
 -   Demo link
+-   Features
+-   Checklist
 -   Installation
+-   External sources
+-   Other resources
+-   License
 
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 
