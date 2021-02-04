@@ -1,38 +1,38 @@
-export function getData(id) {
-  const endpoint = 'https://swapi.dev/api/';
-  const query = 'people/1/';
-  const limit = 25;
-  let url = '';
+// https://swapi.dev/api/
+(function(){
+  const main = document.querySelector("main"),
+        endpoint = "https://swapi.dev/api/",
+        query = "films/1",
+        url = `${endpoint}${query}`;
+  
+  const request = new XMLHttpRequest();
+  request.open("GET", url, true)
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      
+      const data = JSON.parse(request.responseText);
+      render(data);
+      
+    } else {
 
-  // if (id) {
-  //   url = `${endpoint}${id}?api_key=${key}`;
-  // } else {
-  //   url = `${endpoint}${query}${topic}&api_key=${key}&limit=${limit}`;
-  // }
+    }
+  };
+  request.onerror = function() {
+    
+  };
+  request.send();
+  
+  function render(item) {
+    
+      const data = `
+      <section class="films">
+        <h1>${item.title}</h1>
+        <p>${item.opening_crawl}</p>
+      </section>`;
 
-  return fetch(url)
-    .then(response => response.json())
-    .then(data => clean(data.data))
-    .then(data => store(data))
-    .catch(err => {
-      console.log(err);
-    });
-}
+      main.insertAdjacentHTML("beforeend", data);
+  }
 
-function clean(data) {
-  // // asynchronously clean data before returning, fake it with timeout
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(data);
-    }, 1);
-  });
-}
+})();
 
-function store(data) {
-  // asynchronously store data before returning, fake it with timeout
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(data);
-    }, 1);
-  });
-}
+// TODO chaining multiple API calls to get the information I need

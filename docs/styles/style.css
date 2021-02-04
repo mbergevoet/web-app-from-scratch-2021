@@ -1,7 +1,44 @@
+:root {
+	--primary: #fff;
+	--secondary: #000;
+}
+
 * {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 1rem;
+}
+
+main {
+	margin: auto auto 0;
+}
+
+.films {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	/* justify-content: center; */
+	margin: 0 auto;
+	padding: 2rem;
+	width: 500px;
+	height: auto;
+	background-color: var(--secondary);
+}
+
+.films h1 {
+	margin: 0 auto 3rem;
+	color: yellow;
+	font-weight: bolder;
+	font-size: 3rem;
+}
+
+.films p {
+	width: 100%;
+	color: yellow;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: left;
+	line-height: 3rem;
 }
