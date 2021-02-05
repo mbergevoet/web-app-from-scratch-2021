@@ -1,5 +1,13 @@
+// code adapted from Joost Faber
 // https://swapi.dev/api/
-(function(){
+
+(function () {
+  
+  // TODO chaining multiple API calls to get the information I need
+  // maybe use localstorage to store previous API calls
+  
+  // const apiStorage = window.localStorage;
+
   const main = document.querySelector("main"),
         endpoint = "https://swapi.dev/api/",
         query = "films/1",
@@ -35,4 +43,4 @@
 
 })();
 
-// TODO chaining multiple API calls to get the information I need
+
