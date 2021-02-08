@@ -37,10 +37,15 @@ Base URL:
 Example requests:
 
 > https://swapi.dev/api/films/
+
 > https://swapi.dev/api/people/
+
 > https://swapi.dev/api/planets/
+
 > https://swapi.dev/api/species/
+
 > https://swapi.dev/api/starships/
+
 > https://swapi.dev/api/vehicles/
 
 Example single request:
