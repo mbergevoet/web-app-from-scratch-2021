@@ -36,12 +36,7 @@ Base URL:
 
 Example requests:
 
-> https://swapi.dev/api/films/
-> https://swapi.dev/api/people/
-> https://swapi.dev/api/planets/
-> https://swapi.dev/api/species/
-> https://swapi.dev/api/starships/
-> https://swapi.dev/api/vehicles/
+> https://swapi.dev/api/films/ > https://swapi.dev/api/people/ > https://swapi.dev/api/planets/ > https://swapi.dev/api/species/ > https://swapi.dev/api/starships/ > https://swapi.dev/api/vehicles/
 
 Example single request:
 
@@ -54,7 +49,7 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 # Actor diagram
 
 1. The purpose of my app is to get information about the six original star wars films.
-1. The functionalities of the app are:
+1. The functionalities of the app are: <br>
    fetching the data when the user first lands on the homepage. <br>
    generating HTML to display the six films, clicking one of the six films.
    routing to the correct page, fetch the data from the api about the film that was clicked. <br>
@@ -65,7 +60,7 @@ Each catogory has specific attributes. Because that's a really long list I'll re
    a Route handler (to route to the correct chosen film) <br>
    a Data display handler (to display the fetched data on the page)
 
-<img src="https://i.imgur.com/RPtSN2X.png" width="800"/>
+<img src="https://i.imgur.com/VG2wRd1.png" width="800"/>
 
 # Interaction diagram
 
