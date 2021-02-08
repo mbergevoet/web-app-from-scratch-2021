@@ -20,9 +20,56 @@
 
 # Project description
 
-For this course I'm using the [Star Wars API](https://swapi.dev/) to make a webapp from scratch with just HTML, CSS and JavaScript. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work.
+For this course I will be making a webapp from scratch with just HTML, CSS and JavaScript. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work. <br>
+
+# About the API
+
+For this course I'm using the [Star Wars API](https://swapi.dev/). This API is and open REST API which means you don't need a key to access it. But because it's free you only get 10.000 requests per day. That's still a lot of requests but there is a limit. <br>
+Obiously the API returns JSON String data which I can use to inject it into a HTML page. <br>
+Unfortunatly for me, the API hasn't been updated since 2014. Because of that the newer Star Wars movies aren't available so there isn't as much content. <br>
+<br>
+Down below I've written examples of possible endpoints and URL's. <br>
+
+Base URL:
+
+> https://swapi.dev/api/
+
+Example requests:
+
+> https://swapi.dev/api/films/
+> https://swapi.dev/api/people/
+> https://swapi.dev/api/planets/
+> https://swapi.dev/api/species/
+> https://swapi.dev/api/starships/
+> https://swapi.dev/api/vehicles/
+
+Example single request:
+
+> http https://swapi.dev/api/people/1/
+
+Each catogory has specific attributes. Because that's a really long list I'll refer to the [documentation](https://swapi.dev/documentation) of the API
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
+
+# Actor diagram
+
+1. The purpose of my app is to get information about the six original star wars films.
+1. The functionalities of the app are:
+   fetching the data when the user first lands on the homepage. <br>
+   generating HTML to display the six films, clicking one of the six films.
+   routing to the correct page, fetch the data from the api about the film that was clicked. <br>
+   generating HTML to display detailed information about the chosen film.
+1. The actors that will handle these functionalities are: <br>
+   a DOM handler (for the clicking event) <br>
+   an API handler (to fetch the data from the API) <br>
+   a Route handler (to route to the correct chosen film) <br>
+   a Data display handler (to display the fetched data on the page)
+
+<img src="https://i.imgur.com/RPtSN2X.png" width="800"/>
+
+# Interaction diagram
+
+> TODO
 
 # Demo link
 
