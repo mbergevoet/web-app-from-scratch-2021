@@ -3,6 +3,16 @@
 	--secondary: #000;
 }
 
+@font-face {
+	font-family: 'CrawlTitle';
+	src: url('../media/fonts/SWCrawlTitle.ttf');
+}
+
+@font-face {
+	font-family: 'CrawlBody';
+	src: url('../media/fonts/SWCrawlBody.ttf');
+}
+
 * {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
@@ -11,34 +21,130 @@
 	font-size: 1rem;
 }
 
-main {
-	margin: auto auto 0;
+header {
+	height: auto;
+	width: 100vw;
+	background-color: var(--secondary);
+	background-image: url(../media/images/starsbackgroundtransparent.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #333333;
 }
 
-.films {
+header div {
 	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	/* justify-content: center; */
-	margin: 0 auto;
-	padding: 2rem;
-	width: 500px;
-	height: auto;
+	justify-content: center;
+	border-bottom: 1px solid #333333;
+}
+
+header div img {
+	padding: 1.5rem 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
 	background-color: var(--secondary);
 }
 
-.films h1 {
-	margin: 0 auto 3rem;
-	color: yellow;
-	font-weight: bolder;
-	font-size: 3rem;
+header nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	width: 20vw;
 }
 
-.films p {
+header nav ul li {
+	text-decoration: none;
+	font-size: 0.875rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 0.7rem 2.2rem;
+	color: #999999;
+}
+
+header nav ul li:nth-child(1) {
+	border-left: 1px solid #333333;
+	border-right: 0.5px solid #333333;
+}
+
+header nav ul li:nth-child(2) {
+	border-left: 0.5px solid #333333;
+	border-right: 1px solid #333333;
+}
+
+header nav ul li a {
+	color: #999999;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+	color: var(--primary);
+}
+
+body {
+	background-color: #1d1f20;
+}
+
+#starWarsData {
+	margin: 5vh 10vw 0;
+	/* width: 60vw; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	perspective: 2000px;
+}
+
+section {
+	margin: 1rem 0;
+	padding: 2rem;
+	width: 300px;
+	height: auto;
+	background-color: var(--secondary);
+	/* border-radius: 10px; */
+	border-left: 3px solid #333333;
+	border-right: 3px solid #333333;
+	transition: 0.5s cubic-bezier(0.77, 0.6, 0.36, 0.77);
+	transform: rotateX(0deg) scale(1);
+}
+
+section:hover {
+	transform: rotateX(20deg) scale(1.4);
+	cursor: pointer;
+	z-index: 999;
+}
+
+h1,
+p {
+	color: #fddc38;
+}
+
+h1 {
+	margin: 0 auto 2rem;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: 'CrawlTitle', sans-serif;
+	font-weight: bolder;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+}
+
+p {
+	display: flex;
+	justify-content: center;
 	width: 100%;
-	color: yellow;
+	font-family: 'CrawlBody', sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
 	text-align: left;
-	line-height: 3rem;
+	line-height: 2rem;
+	text-align: justify;
+}
+
+p:hover {
+	cursor: pointer;
 }

@@ -4,28 +4,34 @@ const baseUrl = "https://swapi.dev/api/";
 const query = "films";
 const endpoint = `${baseUrl}${query}`; 
 
-// Gets the data with fetch and converts it into json
+// Gets the data with fetch and converts it to json
 getData(endpoint)
     .then((response) => {
         const swApiResponse = response.json()
         return swApiResponse;
     })
     .then((swData) => {
-        displayData(swData);
+        displayData(swData.results);
         console.log(swData);
     })
     .catch((err) => {
         console.log(err);
     });
 
-// Injects json data in the HTML page
+// Injects json data into HTML page
 // Code inspired by https://howtocreateapps.com/fetch-and-display-json-html-javascript/
 function displayData(data) {
-    const container = document.getElementById("starWarsData");
+    console.log(data);
+    const contentContainer = document.getElementById("starWarsData");
     for (let i = 0; i < data.length; i++) {
-        const movieTitles = document.createElement("div");
+        const contentTiles = document.createElement("section");
+        const movieTitles = document.createElement("h1");
+        const openingCrawl = document.createElement("p");
         movieTitles.innerHTML = data[i].title;
-        container.appendChild(movieTitles);
+        openingCrawl.innerHTML = data[i].opening_crawl;
+        contentTiles.appendChild(movieTitles)
+        contentTiles.appendChild(openingCrawl)
+        contentContainer.appendChild(contentTiles);
     }
 }
 
