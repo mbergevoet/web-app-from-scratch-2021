@@ -1,8 +1,14 @@
 // https://swapi.dev/api/
 
+// Global constants
 const baseUrl = "https://swapi.dev/api/";
-const query = "films";
-const endpoint = `${baseUrl}${query}`; 
+const queryFilms = "films";
+const queryCharacters = "people";
+const queryVehicles = "vehicles";
+const queryPlanets = "planets";
+const querySpecies = "species";
+const queryStarships = "starships";
+const endpoint = `${baseUrl}${queryFilms}`; 
 
 // Gets the data with fetch and converts it to json
 getData(endpoint)
