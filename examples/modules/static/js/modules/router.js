@@ -11,7 +11,6 @@ export function handleRoutes() {
         updateUI('gifs');
       });
     },
-    //#giphy/425367
     'gifs/:id': id => {
       loader('active');
       getData(id).then(data => {

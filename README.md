@@ -14,13 +14,15 @@
 
 # Project poster
 
-<img src="https://i.imgur.com/LZ7lU3m.png" width="800"/>
+<!-- <img src="https://i.imgur.com/LZ7lU3m.png" width="800"/> -->
+
+![Project Poster](https://i.imgur.com/LZ7lU3m.png)
 
 <!-- ☝️ replace this description with a description of your own work -->
 
 # Demo link
 
-[Go to the live demo of this project](https://mbergevoet.github.io/web-app-from-scratch-2021/index.html)
+[Go to the live demo of this project](https://mbergevoet.github.io/web-app-from-scratch-2021/#films)
 
 # Project description
 
@@ -58,7 +60,8 @@ Example single request:
 
 Response example:
 
-> {
+```js
+{
 
     "name": "Luke Skywalker",
     "height": "172",
@@ -92,6 +95,7 @@ Response example:
     "url": "https://swapi.dev/api/people/1/"
 
 }
+```
 
 Each catogory has specific attributes. Because that's a really long list I'll refer to the [documentation](https://swapi.dev/documentation) of the API.
 
@@ -111,11 +115,15 @@ Each catogory has specific attributes. Because that's a really long list I'll re
    a Route handler (to route to the correct chosen film) <br>
    a Data display handler (to display the fetched data on the page)
 
-<img src="https://i.imgur.com/VG2wRd1.png" width="800"/>
+<!-- <img src="https://i.imgur.com/VG2wRd1.png" width="800"/> -->
+
+![Actor Diagram](https://i.imgur.com/VG2wRd1.png)
 
 # Interaction diagram
 
-<img src="https://i.imgur.com/s9Jxvar.png" width="800"/>
+<!-- <img src="https://i.imgur.com/s9Jxvar.png" width="800"/> -->
+
+![Interaction Diagram](https://i.imgur.com/s9Jxvar.png)
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
 
