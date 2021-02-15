@@ -14,9 +14,13 @@
 
 # Project poster
 
-> //TODO
+<img src="https://i.imgur.com/LZ7lU3m.png" width="800"/>
 
 <!-- ☝️ replace this description with a description of your own work -->
+
+# Demo link
+
+[Go to the live demo of this project](https://mbergevoet.github.io/web-app-from-scratch-2021/index.html)
 
 # Project description
 
@@ -52,7 +56,11 @@ Example single request:
 
 > https://swapi.dev/api/people/1/
 
-Each catogory has specific attributes. Because that's a really long list I'll refer to the [documentation](https://swapi.dev/documentation) of the API
+Response example:
+
+>
+
+Each catogory has specific attributes. Because that's a really long list I'll refer to the [documentation](https://swapi.dev/documentation) of the API.
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
@@ -75,10 +83,6 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 # Interaction diagram
 
 <img src="https://i.imgur.com/s9Jxvar.png" width="800"/>
-
-# Demo link
-
-[Go to the live demo of this project](https://mbergevoet.github.io/web-app-from-scratch-2021/)
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
 
