@@ -117,13 +117,13 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 
 <!-- <img src="https://i.imgur.com/VG2wRd1.png" width="800"/> -->
 
-![Actor Diagram](https://i.imgur.com/VG2wRd1.png)
+![Actor Diagram](https://i.imgur.com/LvfJWww.png)
 
 # :chart_with_downwards_trend: Interaction diagram
 
 <!-- <img src="https://i.imgur.com/s9Jxvar.png" width="800"/> -->
 
-![Interaction Diagram](https://i.imgur.com/s9Jxvar.png)
+![Interaction Diagram](https://i.imgur.com/5u8aTck.png)
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
 

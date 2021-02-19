@@ -1,7 +1,7 @@
 // Function getting imported from external modules
 import { getData, getDetailData } from "./api.js";
 import { displayDetailData, displayHomeData } from "./display.js";
-import { removeAllChildNodes } from "./remove.js";
+import { removeAllChildElements } from "./remove.js";
 
 // https://swapi.dev/api/
 // http://127.0.0.1:5500/#films
@@ -15,8 +15,8 @@ const movieIdFix = [0, 4, 5, 6, 1, 2, 3];
 export function handleRoutes() {
     routie({
       films: () => {
-            getData(baseUrl + queryFilms)
-                .then((response) => {
+        getData(baseUrl + queryFilms)
+          .then((response) => {
                   const swApiResponse = response.json();
                   return swApiResponse;
                 })
@@ -30,32 +30,27 @@ export function handleRoutes() {
       },
       'films/:id': (id) => {
         console.log(id);
-        removeAllChildNodes(document.getElementById("starWarsData"));
+        removeAllChildElements(document.getElementById("starWarsData"));
         getData(baseUrl + queryFilms + movieIdFix[id])
           .then(response => {
-            // detailData = response;
             return response.json();
           })
           .then((data) => {
-            console.log(data);
+            // console.log(data);
             const detailEndpoints = [data.characters, data.planets, data.starships];
-            getDetailData(detailEndpoints);
+            // console.log(detailEndpoints)
+            return Promise.all(getDetailData(detailEndpoints));
           })
-            
-            // return getDetailData(detailEndpoints);
-            // getData(baseUrl + queryFilms + id)
-            //   .then((response) => {
-            //     const swApiResponse = response.json();
-            //     return swApiResponse;
-            //   })
-            //   .then((detailData) => {
-            //     const detailEndpoints = [detailData.characters, detailData.planets, detailData.starships];
-            //     getDetailData(detailEndpoints);
-            //     console.log(detailEndpoints);
-            //   })
-            // .then((allFilmData) => {
-            //   get 
-            // });
+          // .then((allEndpoints) => {
+          //   allEndpoints.map(response => {
+          //     console.log(response);
+          //     response.map(testResponse => {
+          //       // return singleEndpoint.json();
+          //       console.log(testResponse.json());
+          //     });
+          //   });
+          // })
+          .then(console.log)
       }
     });
 };
