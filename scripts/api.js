@@ -1,5 +1,5 @@
 export function getData(url) {
-    return fetch(url)
+    return fetch(url);
 }
 
 // Code adapted from Roeland
@@ -10,5 +10,5 @@ export function getDetailData(array) {
         });
     });
     return Promise.all(swDetailData);
-}
+};
 

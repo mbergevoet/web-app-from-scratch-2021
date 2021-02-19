@@ -6,4 +6,4 @@ export function removeAllChildNodes(parent) {
     // }
     console.log(parent)
     parent.innerHTML = "";
-  }
+};

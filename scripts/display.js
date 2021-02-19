@@ -17,8 +17,8 @@ export function displayHomeData(data) {
         toDetailLink.appendChild(contentTiles);
         contentContainer.appendChild(toDetailLink);
      })
-}
+};
 
 export function displayDetailData(data) {
     const contentContainer = document.getElementById("starWarsData");
-}
+};
