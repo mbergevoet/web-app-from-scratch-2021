@@ -39,7 +39,7 @@ export function handleRoutes() {
             // console.log(data);
             const detailEndpoints = [data.characters, data.planets, data.starships];
             // console.log(detailEndpoints)
-            return Promise.all(getDetailData(detailEndpoints));
+            return getDetailData(detailEndpoints);
           })
           // .then((allEndpoints) => {
           //   allEndpoints.map(response => {
