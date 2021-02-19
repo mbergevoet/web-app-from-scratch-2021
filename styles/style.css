@@ -89,33 +89,35 @@ body {
 	background-color: #1d1f20;
 }
 
-#starWarsData {
+main {
 	margin: 5vh 10vw 0;
-	/* width: 60vw; */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	/* perspective: 2000px; */
 }
 
-section {
+article {
 	margin: 1rem 0;
 	padding: 1.9rem;
 	width: 300px;
-	height: auto;
+	height: 43em;
 	background-color: var(--secondary);
 	border-left: 5px solid #333333;
 	border-right: 5px solid #333333;
+}
+
+a {
+	text-decoration: none;
+	height: auto;
 	transition: 0.5s cubic-bezier(0.77, 0.6, 0.36, 0.77);
 	transform: perspective(1000px) rotateX(0deg) scale(1);
 	z-index: 1;
 }
 
-section:hover {
+a:hover {
 	transform: perspective(1000px) rotateX(30deg) scale(1.4);
-	cursor: pointer;
-	z-index: 10;
+	z-index: 2;
 }
 
 h1,

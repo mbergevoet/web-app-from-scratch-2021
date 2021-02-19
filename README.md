@@ -1,4 +1,4 @@
-# Table of contents
+# :round_pushpin: Table of contents
 
 -   Project poster
 -   Project description
@@ -12,7 +12,7 @@
 
 <!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
 
-# Project poster
+# :flower_playing_cards: Project poster
 
 <!-- <img src="https://i.imgur.com/LZ7lU3m.png" width="800"/> -->
 
@@ -20,15 +20,15 @@
 
 <!-- ☝️ replace this description with a description of your own work -->
 
-# Demo link
+# :computer: Demo link
 
 [Go to the live demo of this project](https://mbergevoet.github.io/web-app-from-scratch-2021/#films)
 
-# Project description
+# :black_nib: Project description
 
 For this course I will be making a webapp from scratch with just HTML, CSS and JavaScript. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API of your choice, manipulated and finally shown in the UI of the App. You will learn different ways to structure code and develop your own coding style. With the gained knowledge you will be able to build interactive prototypes, based on real data. Also you will gain a better understanding of how API's, frameworks and libraries work. <br>
 
-# About the API
+# :fax: About the API
 
 For this course I'm using the [Star Wars API](https://swapi.dev/). This API is and open REST API which means you don't need a key to access it. But because it's free you only get 10.000 requests per day. That's still a lot of requests but there is a limit. <br>
 Obiously the API returns JSON String data which I can use to inject it into a HTML page. <br>
@@ -101,7 +101,7 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
-# Actor diagram
+# :chart_with_upwards_trend: Actor diagram
 
 1. The purpose of my app is to get information about the six original star wars films.
 1. The functionalities of the app are: <br>
@@ -119,7 +119,7 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 
 ![Actor Diagram](https://i.imgur.com/VG2wRd1.png)
 
-# Interaction diagram
+# :chart_with_downwards_trend: Interaction diagram
 
 <!-- <img src="https://i.imgur.com/s9Jxvar.png" width="800"/> -->
 
@@ -127,13 +127,13 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
 
-# Features
+# :clipboard: Features
 
 My idea currently for this project is to have a Star Wars encyclopedia which lists plantes and characters per episode or movie. The overview page will have my favorite episodes in there and picking one will take you to a detail page with all the planets, characters and vehicles used in that episode. There will also be an option to translate a page into Wookie language. This isn't very usefull but the API offers this feature so I might as well use it for some extra functionality.
 
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
-# Checklist
+# :memo: Checklist
 
 -   ✅ Fetch data from the API
 -   ✅ Style a main page
@@ -145,25 +145,29 @@ My idea currently for this project is to have a Star Wars encyclopedia which lis
 
 <!-- How about a section that describes how to install this project? 🤓 -->
 
-# Installation
+# :electric_plug: Installation
 
 > git clone https://github.com/mbergevoet/web-app-from-scratch-2021.git
 
 <!-- What external data source is featured in your project and what are its properties 🌠 -->
 
-# External sources
+# :newspaper: What I've learned in this course
+
+> TODO
+
+# :book: External sources
 
 -   [Code examples from Joost](https://codepen.io/collection/AyJdPK?grid_type=list)
 -   [JS event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 -   More things will be added as I go along
 
-# Other resources
+# :books: Other resources
 
 [Rubric](https://docs.google.com/spreadsheets/d/1vJJ4EhIqkefWj1nWFp0Pnvy1Kld-S2V3qwZgC6XQO0c/edit?usp=sharing), with learning goals
 [Overall plaaning](https://teams.microsoft.com/l/file/95EAEC95-4AB8-4E62-A810-2445969460B6?tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7&fileType=xlsx&objectUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt%2FShared%20Documents%2F02%20-%20Web%20App%20From%20Scratch%2FWAFS%202021%20Planning.xlsx&baseUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt&serviceName=teams&threadId=19:9bd8abc7b32c4e0196ddbaae12cf8e79@thread.tacv2&groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3)
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
 
-# License
+# :bookmark_tabs: License
 
 > This repository uses [MIT](https://github.com/mbergevoet/iCOV-redesign/blob/master/LICENSE) license. © Merlijn Bergevoet 2021
