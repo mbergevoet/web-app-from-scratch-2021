@@ -21,6 +21,10 @@
 	font-size: 1rem;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 header {
 	height: auto;
 	width: 100vw;
@@ -89,16 +93,16 @@ body {
 	background-color: #1d1f20;
 }
 
-main {
+#starWarsFilms {
 	margin: 5vh 10vw 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
-article {
-	margin: 1rem 0;
+#starWarsFilms article {
+	margin: 1rem 0.5rem;
 	padding: 1.9rem;
 	width: 300px;
 	height: 43em;
@@ -107,7 +111,8 @@ article {
 	border-right: 5px solid #333333;
 }
 
-a {
+#starWarsFilms a {
+	position: relative;
 	text-decoration: none;
 	height: auto;
 	transition: 0.5s cubic-bezier(0.77, 0.6, 0.36, 0.77);
@@ -115,17 +120,18 @@ a {
 	z-index: 1;
 }
 
-a:hover {
+#starWarsFilms a:hover {
+	position: relative;
 	transform: perspective(1000px) rotateX(30deg) scale(1.4);
 	z-index: 2;
 }
 
-h1,
-p {
+#starWarsFilms h1,
+#starWarsFilms p {
 	color: #fddc38;
 }
 
-h1 {
+#starWarsFilms h1 {
 	margin: 0 auto 2rem;
 	text-align: center;
 	text-transform: lowercase;
@@ -135,7 +141,7 @@ h1 {
 	letter-spacing: 1px;
 }
 
-p {
+#starWarsFilms p {
 	display: flex;
 	justify-content: center;
 	width: 100%;
@@ -147,6 +153,52 @@ p {
 	text-align: justify;
 }
 
-p:hover {
+#starWarsFilms p:hover {
 	cursor: pointer;
+}
+
+#starWarsCharacters,
+#starWarsStarships,
+#starWarsPlanets {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#starWarsCharacters > article,
+#starWarsStarships > article,
+#starWarsPlanets > article {
+	color: white;
+	margin: 1em;
+	padding: 2em;
+	width: 20%;
+	background: rgba(67, 91, 152, 0.35);
+	border: solid 2px rgba(49, 84, 170, 0.5);
+	border-radius: 15px;
+}
+
+#starWarsCharacters article img,
+#starWarsStarships article img,
+#starWarsPlanets article img {
+	display: block;
+	margin: 1em auto;
+	width: 150px;
+	height: auto;
+}
+
+#starWarsCharacters article h2,
+#starWarsStarships article h2,
+#starWarsPlanets article h2 {
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+}
+
+#starWarsCharacters article p,
+#starWarsStarships article p,
+#starWarsPlanets article p {
+	color: #217dba;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
 }

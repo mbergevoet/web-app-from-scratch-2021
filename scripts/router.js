@@ -1,6 +1,6 @@
 // Function getting imported from external modules
 import { getData, getDetailData } from "./api.js";
-import { displayDetailData, displayHomeData } from "./display.js";
+import { displayHomeData } from "./display.js";
 import { removeAllChildElements } from "./remove.js";
 
 // https://swapi.dev/api/
@@ -15,6 +15,9 @@ const movieIdFix = [0, 4, 5, 6, 1, 2, 3];
 export function handleRoutes() {
     routie({
       films: () => {
+        removeAllChildElements(document.getElementById("starWarsCharacters"));
+        removeAllChildElements(document.getElementById("starWarsStarships"));
+        removeAllChildElements(document.getElementById("starWarsPlanets"));
         getData(baseUrl + queryFilms)
           .then((response) => {
                   const swApiResponse = response.json();
@@ -22,35 +25,24 @@ export function handleRoutes() {
                 })
                 .then((swData) => {
                   displayHomeData(swData.results);
-                  // console.log(swData);
                 })
                 .catch((err) => {
                   console.log(err);
                  });
       },
       'films/:id': (id) => {
-        console.log(id);
-        removeAllChildElements(document.getElementById("starWarsData"));
+        removeAllChildElements(document.getElementById("starWarsFilms"));
         getData(baseUrl + queryFilms + movieIdFix[id])
           .then(response => {
             return response.json();
           })
-          .then((data) => {
-            // console.log(data);
-            const detailEndpoints = [data.characters, data.planets, data.starships];
-            // console.log(detailEndpoints)
+          .then((json) => {
+            const detailEndpoints = [json.characters, json.planets, json.starships];
             return getDetailData(detailEndpoints);
           })
-          // .then((allEndpoints) => {
-          //   allEndpoints.map(response => {
-          //     console.log(response);
-          //     response.map(testResponse => {
-          //       // return singleEndpoint.json();
-          //       console.log(testResponse.json());
-          //     });
-          //   });
-          // })
-          .then(console.log)
+          .catch((err) => {
+            console.log(err);
+           });
       }
     });
 };
