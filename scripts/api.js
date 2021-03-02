@@ -8,27 +8,28 @@ export function getData(url) {
 export function getDetailData(allEndpoints) {
     // check if allEndpoints from previous module are valid urls 
     // console.log(allEndpoints);
-    // empty array to later store all fetched objects of later use
 
-    // nested forEach function to reach all endpoints array items  
+    // nested map and for each function to reach all endpoints array items  
     const resultArray = allEndpoints.map(singleEndpoint => {
         return singleEndpoint.forEach(endpoint => {
             // use fetch to request data from endpoints on detail page items
             // the method .json() is called to read the response as data
-            // the response is stored and pushed to the above empty array
-            // calling .then on the promise captures the results regardless of the state, catching the data
+            // the response goes straight into the seperate display functions
             fetch(endpoint)
                 .then(response => {
                     let responseData = response.json()
                     responseData.then(result => {
                         if (result.height) {
-                            //display character
+                            // checks if object has the property "height", if that is the case it's a character
+                            // displayCharacters function is called to handle the rendering of the charcter data
                             displayCharacters(result);
                         } else if (result.model) {
-                            //display starship
+                            // checks if object has the property "model", if that is the case it's a starship
+                            // displayStarships function is called to handle the rendering of the charcter data
                             displayStarships(result);
                         } else {
-                            // display planet
+                            // if none of the above apply it most be a planet
+                            // displayPlanet function is called to handle the rendering of the charcter data
                             displayPlanets(result);
                         }
                     });

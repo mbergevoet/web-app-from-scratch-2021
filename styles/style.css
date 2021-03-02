@@ -13,6 +13,10 @@
 	src: url('../media/fonts/SWCrawlBody.ttf');
 }
 
+:root {
+	--dropshadow: drop-shadow(1px 4px 4px rgb(36, 36, 209));
+}
+
 * {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
@@ -163,6 +167,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #starWarsCharacters > article,
@@ -171,34 +176,78 @@ body {
 	color: white;
 	margin: 1em;
 	padding: 2em;
-	width: 20%;
 	background: rgba(67, 91, 152, 0.35);
-	border: solid 2px rgba(49, 84, 170, 0.5);
+	border: solid 5px rgba(49, 84, 170, 0.5);
 	border-radius: 15px;
+	transform: perspective(3000px) rotateY(20deg) rotateX(15deg);
+	transition: 0.5s cubic-bezier(0.77, 0.6, 0.36, 0.77);
+}
+
+#starWarsCharacters > article:hover,
+#starWarsStarships > article:hover,
+#starWarsPlanets > article:hover {
+	transform: rotateY(0deg) rotateX(0deg) scale(1.1);
+}
+
+#starWarsCharacters article {
+	width: 20%;
+}
+
+#starWarsStarships article {
+	width: 40%;
+}
+
+#starWarsPlanets article {
+	width: 40%;
 }
 
 #starWarsCharacters article img,
 #starWarsStarships article img,
 #starWarsPlanets article img {
 	display: block;
-	margin: 1em auto;
-	width: 150px;
+	margin: 1em auto 2.5em;
 	height: auto;
+	filter: var(--dropshadow);
+}
+
+#starWarsCharacters article img {
+	width: 150px;
+}
+
+#starWarsStarships article img,
+#starWarsPlanets article img {
+	width: 250px;
 }
 
 #starWarsCharacters article h2,
 #starWarsStarships article h2,
 #starWarsPlanets article h2 {
+	color: #217dba;
 	width: 100%;
-	font-size: 2em;
 	text-align: center;
+	font-style: italic;
+	filter: var(--dropshadow);
+}
+
+#starWarsCharacters article h2 {
+	height: 2em;
+	font-size: 2em;
+}
+
+#starWarsStarships article h2,
+#starWarsPlanets article h2 {
+	height: 3em;
+	font-size: 3em;
 }
 
 #starWarsCharacters article p,
 #starWarsStarships article p,
 #starWarsPlanets article p {
+	margin: 0.5em 0;
+	width: 80%;
 	color: #217dba;
 	font-style: italic;
 	font-weight: bold;
 	text-transform: uppercase;
+	filter: var(--dropshadow);
 }
