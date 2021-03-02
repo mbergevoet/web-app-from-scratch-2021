@@ -139,9 +139,9 @@ My idea currently for this project is to have a Star Wars encyclopedia which lis
 -   ✅ Style a main page
 -   ✅ Inject data into HTML
 -   ✅ Add basic routes
--   Routes actually working
--   Style a detail page
--   Add Wookie translate option
+-   ✅ Routes actually working
+-   ✅ Style a detail page
+-   ❌ Add Wookie translate option
 
 <!-- How about a section that describes how to install this project? 🤓 -->
 

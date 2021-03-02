@@ -170,6 +170,10 @@ body {
 	justify-content: center;
 }
 
+#starWarsPlanets {
+	margin-bottom: 10vh;
+}
+
 #starWarsCharacters > article,
 #starWarsStarships > article,
 #starWarsPlanets > article {
@@ -186,19 +190,16 @@ body {
 #starWarsCharacters > article:hover,
 #starWarsStarships > article:hover,
 #starWarsPlanets > article:hover {
-	transform: rotateY(0deg) rotateX(0deg) scale(1.1);
+	transform: rotateY(0deg) rotateX(0deg) scale(1.05);
 }
 
 #starWarsCharacters article {
 	width: 20%;
 }
 
-#starWarsStarships article {
-	width: 40%;
-}
-
+#starWarsStarships article,
 #starWarsPlanets article {
-	width: 40%;
+	width: 30%;
 }
 
 #starWarsCharacters article img,
@@ -240,14 +241,36 @@ body {
 	font-size: 3em;
 }
 
+#starWarsCharacters article div,
+#starWarsStarships article div,
+#starWarsPlanets article div {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
 #starWarsCharacters article p,
 #starWarsStarships article p,
 #starWarsPlanets article p {
 	margin: 0.5em 0;
 	width: 80%;
 	color: #217dba;
+	font-size: 1.3em;
 	font-style: italic;
 	font-weight: bold;
 	text-transform: uppercase;
 	filter: var(--dropshadow);
+	position: relative;
+}
+
+#starWarsCharacters article p::after,
+#starWarsStarships article p::after,
+#starWarsPlanets article p::after {
+	content: '';
+	width: 60%;
+	height: 3px;
+	position: absolute;
+	top: 110%;
+	left: 0;
+	background: #217dba;
 }

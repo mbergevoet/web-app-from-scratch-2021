@@ -38,7 +38,8 @@ export function displayCharacters(element) {
     // setting the source for the image
     placeholderImage.setAttribute("src", "media/images/character-icon.png")
 
-    // creating the tags necessary 
+    // creating the tags necessary
+    const textWrapper = document.createElement("div");
     const characterName = document.createElement("h2");
     const characterHeight = document.createElement("p");
     const characterGender = document.createElement("p");
@@ -59,12 +60,13 @@ export function displayCharacters(element) {
     // appending the elements into the right containers which injects in into the html
     characterContainer.appendChild(characterName);
     characterContainer.appendChild(placeholderImage);
-    characterContainer.appendChild(characterHeight);
-    characterContainer.appendChild(characterGender);
-    characterContainer.appendChild(characterEyeColor);
-    characterContainer.appendChild(characterHairColor);
-    characterContainer.appendChild(characterBirthYear);
-    characterContainer.appendChild(characterMass);
+    textWrapper.appendChild(characterHeight);
+    textWrapper.appendChild(characterGender);
+    textWrapper.appendChild(characterEyeColor);
+    textWrapper.appendChild(characterHairColor);
+    textWrapper.appendChild(characterBirthYear);
+    textWrapper.appendChild(characterMass);
+    characterContainer.appendChild(textWrapper);
 
     // appending the character container into the container where all characters go
     contentContainer.appendChild(characterContainer);
@@ -83,6 +85,7 @@ export function displayStarships(element) {
     placeholderImage.setAttribute("src", "media/images/starship-icon.png")
 
     // creating the tags necessary 
+    const textWrapper = document.createElement("div");
     const starshipName = document.createElement("h2");
     const starshipLength = document.createElement("p");
     const starshipCrew = document.createElement("p");
@@ -105,13 +108,14 @@ export function displayStarships(element) {
     // appending the elements into the right containers which injects in into the html
     starshipContainer.appendChild(starshipName);
     starshipContainer.appendChild(placeholderImage);
-    starshipContainer.appendChild(starshipLength);
-    starshipContainer.appendChild(starshipCrew);
-    starshipContainer.appendChild(starshipPassangers);
-    starshipContainer.appendChild(starshipManufacturer);
-    starshipContainer.appendChild(starshipModel);
-    starshipContainer.appendChild(starshipClass);
-    starshipContainer.appendChild(starshipAtmospheringSpeed);
+    textWrapper.appendChild(starshipLength);
+    textWrapper.appendChild(starshipCrew);
+    textWrapper.appendChild(starshipPassangers);
+    textWrapper.appendChild(starshipManufacturer);
+    textWrapper.appendChild(starshipModel);
+    textWrapper.appendChild(starshipClass);
+    textWrapper.appendChild(starshipAtmospheringSpeed);
+    starshipContainer.appendChild(textWrapper);
 
     // appending the character container into the container where all starships go
     contentContainer.appendChild(starshipContainer);
@@ -129,7 +133,8 @@ export function displayPlanets(element) {
     // setting the source for the image
     placeholderImage.setAttribute("src", "media/images/planet-icon.png")
     
-    // creating the tags necessary 
+    // creating the tags necessary
+    const textWrapper = document.createElement("div");
     const planetName = document.createElement("h2");
     const planetClimate = document.createElement("p");
     const planetPopulation = document.createElement("p");
@@ -152,13 +157,14 @@ export function displayPlanets(element) {
     // appending the elements into the right containers which injects in into the html
     planetContainer.appendChild(planetName);
     planetContainer.appendChild(placeholderImage);
-    planetContainer.appendChild(planetClimate);
-    planetContainer.appendChild(planetPopulation);
-    planetContainer.appendChild(planetGravity);
-    planetContainer.appendChild(planetOrbit);
-    planetContainer.appendChild(planetRotation);
-    planetContainer.appendChild(planetDiameter);
-    planetContainer.appendChild(planetTerrain);
+    textWrapper.appendChild(planetClimate);
+    textWrapper.appendChild(planetPopulation);
+    textWrapper.appendChild(planetGravity);
+    textWrapper.appendChild(planetOrbit);
+    textWrapper.appendChild(planetRotation);
+    textWrapper.appendChild(planetDiameter);
+    textWrapper.appendChild(planetTerrain);
+    planetContainer.appendChild(textWrapper);
 
     // appending the character container into the container where all planets go
     contentContainer.appendChild(planetContainer);
