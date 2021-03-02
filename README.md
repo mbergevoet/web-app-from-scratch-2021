@@ -17,6 +17,7 @@
 <!-- <img src="https://i.imgur.com/LZ7lU3m.png" width="800"/> -->
 
 ![Project Poster](https://i.imgur.com/LZ7lU3m.png)
+![Project Poster Two](https://i.imgur.com/XGN1nWX.png)
 
 <!-- ☝️ replace this description with a description of your own work -->
 
@@ -147,24 +148,35 @@ My idea currently for this project is to have a Star Wars encyclopedia which lis
 
 # :electric_plug: Installation
 
+Open your terminal or git client
+
+> cd yourDirectory
+
 > git clone https://github.com/mbergevoet/web-app-from-scratch-2021.git
 
 <!-- What external data source is featured in your project and what are its properties 🌠 -->
 
 # :newspaper: What I've learned in this course
 
-> TODO
+In this course I've learned how to build a single page, client side, webapp from scratch. <br>
+I've learned there are many open API's to your disposal and how different each one is. In my case the Star Wars API is different because it doesn't give you all the data straight away. For example I van fetch the data about the six star wars films just fine but it only gives me a limited amount, if I want to know more details I have to fetch that detail data from a lot of other endpoints. That cost me a lot of time to figure out in the beginning. But in the end it was worth it and I now know how to handle API's like this one. <br>
+I've learned how to use a mircro router librabry. This turned out to be rather easy. All you have to do is define the routes you have and put the code you want to run on a given route between the brackets of the route. <br>
+I've learned how to write your own render functions. Most of the things to do that I already knew but this time I combined it with the router which made it actually work as a single page webapp. <br>
+Other things like splitting up your code in to modules, fetching data from an API and cleaning the data I already learned and experienced more or less in the Tech Track of the Theme Semester Information Design.
 
 # :book: External sources
 
+-   [SWAPI](https://swapi.dev/)
 -   [Code examples from Joost](https://codepen.io/collection/AyJdPK?grid_type=list)
 -   [JS event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
--   More things will be added as I go along
+-   [Codepen](https://codepen.io)
+-   [MDN](https://developer.mozilla.org/)
+-   Special thanks to Wouter & Leonie
 
 # :books: Other resources
 
 [Rubric](https://docs.google.com/spreadsheets/d/1vJJ4EhIqkefWj1nWFp0Pnvy1Kld-S2V3qwZgC6XQO0c/edit?usp=sharing), with learning goals
-[Overall plaaning](https://teams.microsoft.com/l/file/95EAEC95-4AB8-4E62-A810-2445969460B6?tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7&fileType=xlsx&objectUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt%2FShared%20Documents%2F02%20-%20Web%20App%20From%20Scratch%2FWAFS%202021%20Planning.xlsx&baseUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt&serviceName=teams&threadId=19:9bd8abc7b32c4e0196ddbaae12cf8e79@thread.tacv2&groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3)
+[Overall planning](https://teams.microsoft.com/l/file/95EAEC95-4AB8-4E62-A810-2445969460B6?tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7&fileType=xlsx&objectUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt%2FShared%20Documents%2F02%20-%20Web%20App%20From%20Scratch%2FWAFS%202021%20Planning.xlsx&baseUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt&serviceName=teams&threadId=19:9bd8abc7b32c4e0196ddbaae12cf8e79@thread.tacv2&groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3)
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
 
