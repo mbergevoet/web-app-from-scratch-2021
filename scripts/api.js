@@ -1,6 +1,7 @@
 import { displayCharacters, displayStarships, displayPlanets } from "./display.js";
 
 export function getData(url) {
+    // fetching the data from a given url
     return fetch(url);
 };
 

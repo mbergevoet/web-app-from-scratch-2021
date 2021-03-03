@@ -104,18 +104,6 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 
 # :chart_with_upwards_trend: Actor diagram
 
-1. The purpose of my app is to get information about the six original star wars films.
-1. The functionalities of the app are: <br>
-   fetching the data when the user first lands on the homepage. <br>
-   generating HTML to display the six films, clicking one of the six films.
-   routing to the correct page, fetch the data from the api about the film that was clicked. <br>
-   generating HTML to display detailed information about the chosen film.
-1. The actors that will handle these functionalities are: <br>
-   a DOM handler (for the clicking event) <br>
-   an API handler (to fetch the data from the API) <br>
-   a Route handler (to route to the correct chosen film) <br>
-   a Data display handler (to display the fetched data on the page)
-
 <!-- <img src="https://i.imgur.com/VG2wRd1.png" width="800"/> -->
 
 ![Actor Diagram](https://i.imgur.com/LvfJWww.png)
@@ -124,13 +112,13 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 
 <!-- <img src="https://i.imgur.com/s9Jxvar.png" width="800"/> -->
 
-![Interaction Diagram](https://i.imgur.com/5u8aTck.png)
+![Interaction Diagram](https://i.imgur.com/lrlbVI8.png)
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
 
 # :clipboard: Features
 
-My idea currently for this project is to have a Star Wars encyclopedia which lists plantes and characters per episode or movie. The overview page will have my favorite episodes in there and picking one will take you to a detail page with all the planets, characters and vehicles used in that episode. There will also be an option to translate a page into Wookie language. This isn't very usefull but the API offers this feature so I might as well use it for some extra functionality.
+My idea currently for this project is to have a Star Wars encyclopedia which lists plantes and characters per episode or movie. The overview page will have all the episodes in there and picking one will take you to a detail page with all the planets, characters and vehicles used in that episode. It's fairly basic bu if I had more time I might have been able to make a search feature where you can look up things from star wars by typing in a search input field.
 
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
@@ -158,11 +146,15 @@ Open your terminal or git client
 
 # :newspaper: What I've learned in this course
 
-In this course I've learned how to build a single page, client side, webapp from scratch. <br>
+In this course I've learned how to build a single page, client side, web appllication from scratch. <br>
+<br>
 I've learned there are many open API's to your disposal and how different each one is. In my case the Star Wars API is different because it doesn't give you all the data straight away. For example I van fetch the data about the six star wars films just fine but it only gives me a limited amount, if I want to know more details I have to fetch that detail data from a lot of other endpoints. That cost me a lot of time to figure out in the beginning. But in the end it was worth it and I now know how to handle API's like this one. <br>
+<br>
 I've learned how to use a mircro router librabry. This turned out to be rather easy. All you have to do is define the routes you have and put the code you want to run on a given route between the brackets of the route. <br>
+<br>
 I've learned how to write your own render functions. Most of the things to do that I already knew but this time I combined it with the router which made it actually work as a single page webapp. <br>
-Other things like splitting up your code in to modules, fetching data from an API and cleaning the data I already learned and experienced more or less in the Tech Track of the Theme Semester Information Design.
+<br>
+Other things like understanding and reading the documentation of an API, fetching data from an API and cleaning the data I and splitting up your code in modules I already learned and experienced more or less in the Tech Track of the Theme Semester Information Design. But eventhough I already knew those things didn't make the course easier per se. I found my self back tracking a lot to what I had done previously because I forgot some things. So this was a creat exercise of remembering the old things and applying them all together in this one assignment.
 
 # :book: External sources
 
