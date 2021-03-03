@@ -3,6 +3,9 @@
 -   Project poster
 -   Project description
 -   Demo link
+-   About the API
+-   Actor Diagram
+-   Interaction Diagram
 -   Features
 -   Checklist
 -   Installation
@@ -106,7 +109,7 @@ Each catogory has specific attributes. Because that's a really long list I'll re
 
 <!-- <img src="https://i.imgur.com/VG2wRd1.png" width="800"/> -->
 
-![Actor Diagram](https://i.imgur.com/LvfJWww.png)
+![Actor Diagram](https://i.imgur.com/iPGCUXz.png)
 
 # :chart_with_downwards_trend: Interaction diagram
 

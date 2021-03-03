@@ -1,11 +1,11 @@
 // Injects json data into HTML page
 // Code inspired by https://howtocreateapps.com/fetch-and-display-json-html-javascript/
-export function displayHomeData(array) {
+export function displayHomeData(filmsList) {
     // the main container where the films will end up in
     const contentContainer = document.getElementById("starWarsFilms");
 
     // for each function which loops through the array of all the movies and gets the title and opening crawl out of it
-    array.forEach((swFilm) => {
+    filmsList.forEach((swFilm) => {
         const toDetailLink = document.createElement("a");
         // give the <a> tag the right href so it will link to the correct route
         toDetailLink.setAttribute("href", "#films/" + swFilm.episode_id);
@@ -23,7 +23,7 @@ export function displayHomeData(array) {
         contentTiles.appendChild(openingCrawl);
         toDetailLink.appendChild(contentTiles);
         contentContainer.appendChild(toDetailLink);
-     })
+    });
 };
 
 // handles the display of character elements

@@ -48,7 +48,7 @@ export function handleRoutes() {
             // making an array to only get the characters, planets and starships in this movie
             const detailEndpoints = [json.characters, json.planets, json.starships];
             // fetching the data form all the endpoints and displaying them
-            return getDetailData(detailEndpoints);
+            getDetailData(detailEndpoints);
           })
           .catch((err) => {
             // if errors occur log them in the console
